@@ -13,8 +13,8 @@ function Order({ closeHour, openHour }) {
 }
 
 Order.propTypes = {
-  closeHour: PropTypes.string,
-  openHour: PropTypes.string,
+  closeHour: PropTypes.number,
+  openHour: PropTypes.number,
 };
 
 export default Order;

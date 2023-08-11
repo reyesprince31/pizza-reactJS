@@ -5,13 +5,17 @@ import Pizza from "./components/Pizza";
 import pizzaData from "./data";
 
 function App() {
+  const newPizzaData = [...pizzaData];
+
+  console.log(newPizzaData);
+
   return (
     <div className="container">
       <Header />
       <Menu />
 
       <ul className="pizzas">
-        {pizzaData.map((pizza, index) => {
+        {newPizzaData.map((pizza, index) => {
           return <Pizza key={index} id={index} {...pizza} />;
         })}
       </ul>
